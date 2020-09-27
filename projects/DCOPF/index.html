@@ -1,19 +1,19 @@
 ---
 layout: default
-title: "Variational Discriminator Bottleneck: Improving Imitation Learning, Inverse RL, and GANs by Constraining Information Flow"
+title: "Active Line Flow Constraint Screening in DC Optimal Power Flow Problems"
 ---
 
 <center><h1>{{ page.title }}</h1></center>
 
 <td>
 	<center>
-		International Conference on Learning Representations (ICLR 2019)<br>
+		<!--International Conference on Learning Representations (ICLR 2019)<br> -->
 		<br>
-		<nobr>Xue Bin Peng</nobr> &emsp;&emsp; <nobr>Angjoo Kanazawa</nobr> &emsp;&emsp; <nobr>Sam Toyer</nobr> &emsp;&emsp; <nobr>Pieter Abbeel</nobr> &emsp;&emsp; <nobr>Sergey Levine</nobr><br>
+		<nobr>Zhi Jin Zhang</nobr> &emsp;&emsp; <nobr>Hao-Lun Hsu</nobr> </nobr><br>
 		<br>
-		<nobr>University of California, Berkeley</nobr><br>
+		<nobr>Georgia Institute of Technology</nobr><br>
 		<br>
-		<img style="vertical-align:middle" src="vdb_teaser.png"  width="100%" height="inherit"/>		
+		<img style="vertical-align:middle" src="bus_39.png"  width="100%" height="inherit"/>		
 	</center>
 </td>
 
@@ -22,38 +22,40 @@ title: "Variational Discriminator Bottleneck: Improving Imitation Learning, Inve
 <td>
 	<hr>
 	<h3 style="margin-bottom:10px;">Abstract</h3>
-	Adversarial learning methods have been proposed for a wide range of applications, but 
-	the training of adversarial models can be notoriously unstable. Effectively balancing 
-	the performance of the generator and discriminator is critical, since a discriminator 
-	that achieves very high accuracy will produce relatively uninformative gradients. In 
-	this work, we propose a simple and general technique to constrain information flow in 
-	the discriminator by means of an information bottleneck. By enforcing a constraint on 
-	the mutual information between the observations and the discriminator's internal 
-	representation, we can effectively modulate the discriminator's accuracy and maintain 
-	useful and informative gradients. We demonstrate that our proposed variational 
-	discriminator bottleneck (VDB) leads to significant improvements across three distinct 
-	application areas for adversarial learning algorithms. Our primary evaluation studies 
-	the applicability of the VDB to imitation learning of dynamic continuous control skills, 
-	such as running. We show that our method can learn such skills directly from raw video 
-	demonstrations, substantially outperforming prior adversarial imitation learning methods. 
-	The VDB can also be combined with adversarial inverse reinforcement learning to learn 
-	parsimonious reward functions that can be transferred and re-optimized in new settings. 
-	Finally, we demonstrate that VDB can train GANs more effectively for image generation, 
-	improving upon a number of prior stabilization methods.
+	The DC Optimal Power Flow (DC OPF) problem is one of the most important optimization
+	problems in power system operations, and the objective of DC OPF is to minimize the 
+	total generation cost with respect to power flow and generation constraints. Power
+	system operators solve the DC OPF periodically, e.g., every five minutes, since the 
+	load profile and generation cost coefficients (generation cost is equal to generation
+	cost coefficient multiplied by the amount of generated power) can change in real-time.
+	However, obtaining DC OPF solutions is challenging owing to a number of constraints
+	imposed on them, particularly the line flow constraints, which restrict the maximum
+	allowable power flow on each transmission line. Researchers have observed that only a
+	fraction of the line flow constraints ever become active at the optimal solution, 
+	despite variations in the load and cost coefficient profiles. This means that only a 
+	portion of lines have power flows at their limits. This observation implies that many
+	line flow constraints are redundant/never binding, which can be removed to reduce the
+	complexity of the DC OPF problem. We have developed transmission line constraint-screening
+	algorithms using four different machine learning techniques. We selected neural network 
+	as the most suitable method owing to the optimal trade-off between FNR and accuracy it
+	provides on the test set for both 39-bus and 118-bus systems.
+	
+	
 </td>
 
 <td>
-	<h3> Paper: [<a href="2019_VDB.pdf">PDF</a>] &nbsp; &nbsp; &nbsp; Code: [<a href="https://github.com/akanazawa/vgan">GitHub</a>] &nbsp; &nbsp; &nbsp; Preprint: [<a href="https://arxiv.org/abs/1810.00821">arXiv</a>] </h3>
+	<h3> Paper: [<a href="2020_DCOPF.pdf">PDF</a>] <!--&nbsp; &nbsp; &nbsp; Code: [<a href="https://github.com/akanazawa/vgan">GitHub</a>] &nbsp; &nbsp; &nbsp; Preprint: [<a href="https://arxiv.org/abs/1810.00821">arXiv</a>]--> </h3>
 </td>
 
 <tr>
-		<h3 style="margin-bottom:10px;">Video</h3>
+	<!--	<h3 style="margin-bottom:10px;">Video</h3>
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/0qTCNx4AtJU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	-->
 </tr>
 	
 <br>
 <br>
-
+<!--
 <h3 style="margin-bottom:0px;">Bibtex</h3>
 <pre>
 @inproceedings{
@@ -65,3 +67,4 @@ title: "Variational Discriminator Bottleneck: Improving Imitation Learning, Inve
 	url={https://openreview.net/forum?id=HyxPx3R9tm},
 }
 </pre>
+-->
