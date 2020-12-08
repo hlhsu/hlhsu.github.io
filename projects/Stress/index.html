@@ -9,11 +9,11 @@ title: Dynamic Terrain Traversal Skills Using Reinforcement Learning
 	<center>
 		Transactions on Graphics (Proc. ACM SIGGRAPH 2015) <br>
 		<br>
-		<nobr>Xue Bin Peng</nobr> &emsp;&emsp; <nobr>Glen Berseth</nobr> &emsp;&emsp; <nobr>Michiel van de Panne</nobr><br>
+		<nobr>Asim Gazi</nobr> &emsp;&emsp; <nobr>Michael Chan</nobr> &emsp;&emsp; <nobr>Hao-Lun Hsu/nobr><br>
 		<br>
-		<nobr>University of British Columbia</nobr><br>
+		<nobr>Georgia Institute of Technology</nobr><br>
 		<br>
-		<img style="vertical-align:middle" src="terrainrl_teaser.png"  width="100%" height="inherit"/>		
+		<img style="vertical-align:middle" src="architecture.png"  width="100%" height="inherit"/>		
 	</center>
 </td>
 
@@ -22,23 +22,31 @@ title: Dynamic Terrain Traversal Skills Using Reinforcement Learning
 <td>
 	<hr>
 	<h3 style="margin-bottom:10px;">Abstract</h3>
-	The locomotion skills developed for physics-based characters most
-	often target flat terrain. However, much of their potential lies with
-	the creation of dynamic, momentum-based motions across more
-	complex terrains. In this paper, we learn controllers that allow
-	simulated characters to traverse terrains with gaps, steps, and walls
-	using highly dynamic gaits. This is achieved using reinforcement
-	learning, with careful attention given to the action representation,
-	non-parametric approximation of both the value function and the
-	policy; epsilon-greedy exploration; and the learning of a good state
-	distance metric. The methods enable a 21-link planar dog and a
-	7-link planar biped to navigate challenging sequences of terrain using
-	bounding and running gaits. We evaluate the impact of the key
-	features of our skill learning pipeline on the resulting performance.
+	From the early days of functional neuroimaging, researchers have leveraged peripheral physiological
+	sensing and concurrent use of the technology to explore brain-heart connections. From demonstrating
+	simple correlations between parameters such as heart rate and fear-implicated brain regions such as the
+	amygdala to very recent prediction of heart rate and skin conductance using fMRI data, a vast amount of
+	literature has established that at least in certain contexts, limbic brain activity and certain peripheral
+	physiological features are significantly intertwined. Yet, translating this scientific result to an application-
+	oriented view of using peripheral biosignals to estimate brain activity has not been accomplished. This
+	project focused on this regression problem to lay the framework for future research in this area. Due to
+	data limitation constraints, however, we sought to find clever ways to summarize our plentiful
+	physiological data to better map to brain activity. One of these ways was inspired by LFADS, in that we
+	hypothesized that latent autonomic nervous system state dynamics drive the observable changes in
+	peripheral physiological features observed, and hence, by constructing such a nonlinear latent state
+	model, we may be able to use lower dimensional factors to map to brain activity. To this end, we
+	experimented with a variety of subject-independent approaches to this regression problem using LSTMs,
+	support vector regression, ridge regression, etc. Concurrently, we implemented a many-to-one LSTM as
+	a fully supervised approach for comparison. Upon observing unsatisfactory results from all subject-
+	independent approaches, we spent the remaining couple weeks of the semester stepping back and
+	analyzing the data using simpler correlation analysis, as well as by experimenting with subject-specific
+	modeling. These results were more promising, with statistically significant correlations being discovered
+	and positive R squared values being produced for subject-specific regressions. These results give us hope
+	for fruitful research in this area, even if the exact ideas laid out herein prove intractable.
 </td>
 
 <td>
-	<h3> Paper: [<a href="2015_TOG_TerrainRL.pdf">PDF</a>] </h3>
+	<h3> Paper: [<a href="2020_Stress.pdf">PDF</a>] </h3>
 </td>
 
 <tr>
