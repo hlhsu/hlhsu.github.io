@@ -1,0 +1,69 @@
+---
+layout: default
+title: 	Improving Safety in Deep Reinforcement Learning using Unsupervised Action Planning
+---
+
+<center><h1>{{ page.title }}</h1></center>
+
+<td>
+	<center>
+		<!--IEEE International Conference on Robotics and Automation (ICRA 2018)<br>-->
+		<br>
+		<nobr>Hao-Lun Hsu</nobr><sup>1</sup> &emsp;&emsp; <nobr>Qiuhua Huang</nobr><sup>2</sup> &emsp;&emsp;<nobr>Sehoon Ha</nobr><sup>1</sup><br>
+		
+		<br>
+		
+		<nobr> <sup>1</sup> Georgia Institute of Technology</nobr> &emsp;&emsp; <nobr> <sup>2</sup> Pacific Northwest National Laboratory </nobr>
+		<br>
+		<img style="vertical-align:middle" src="performance_saferl.png"  width="100%" height="inherit" />		
+	</center>
+</td>
+
+<br>
+	
+<td>
+	<hr>
+	<h3 style="margin-bottom:10px;">Abstract</h3>
+	One of the key challenges to deep reinforcement learning (deep RL) is to ensure safety at both 
+	training and testing phases. In this work, we propose a novel technique of unsupervised action planning
+	to improve the safety of on-policy reinforcement learning algorithms, such as trust region policy optimization
+	(TRPO) or proximal policy optimization (PPO). We design our safety-aware reinforcement learning by storing all
+	the history of ``recovery'' actions that rescue the agent from dangerous situations into a separate ``safety''
+	buffer and finding the best recovery action when the agent encounters similar states. Because this functionality
+	requires the algorithm to query similar states, we implement the proposed safety mechanism using an unsupervised
+	learning algorithm, k-means clustering. We evaluate the proposed algorithm on six robotic control tasks that cover
+	navigation and manipulation. Our results show that the proposed safety RL algorithm can achieve higher rewards
+	compared with multiple baselines in both discrete and continuous control problems.
+
+</td>
+
+<td>
+	<h3> Paper: [<a href="2021_SafeRL.pdf">PDF</a>] Preprint: [<a href="https://arxiv.org/abs/2109.14325">arXiv</a>] Video: [<a href="https://www.youtube.com/watch?v=AFTeWSohILo">YouTube</a>]
+	Workshop Page: [<a href="https://planandlearn.net/">WIPL</a>] </h3>
+</td>
+
+<tr>
+		<!--<h3 style="margin-bottom:10px;">Video</h3>
+		<iframe width="560" height="315" padding-bottom="51%" src="https://www.youtube.com/watch?v=AFTeWSohILo" frameborder="0" allowfullscreen></iframe>
+		<iframe width="560" height="315" padding-bottom="51%" src="https://www.youtube.com/embed/KPfzRSBzNX4" frameborder="0" allowfullscreen></iframe></pre>-->
+</tr>
+	
+<br>
+<br>
+
+<h3 style="margin-bottom:0px;">Bibtex</h3>
+
+@misc{
+	hsu2021saferl, 
+	author={Hao-Lun Hsu and Qiuhua Huang and Sehoon Ha}, 
+	<!--<pre>booktitle={2018 IEEE International Conference on Robotics and Automation (ICRA)}, </pre>-->
+	title={Improving Safety in Deep Reinforcement Learning using Unsupervised Action Planning}, 
+	year={2021}, 
+	volume={}, 
+	number={}, 
+	<!--<pre>pages={1-8}, </pre>-->
+	keywords={Robotics; Safety RL}, 
+	<!--doi={10.1109/ICRA.2018.8460528}, 
+	ISSN={2577-087X}, 
+	month={May}</pre>-->
+}
