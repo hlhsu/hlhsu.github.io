@@ -1,0 +1,5 @@
+Hao-Lun Hsu is currently a Ph.D. student in Computer Science at Duke University, under the guidance of Prof. Miroslav Pajic and Prof. Pan Xu. His research is centered around the inter-
+section of provable and practical decision-making, specifically in the realms of reinforcement learning (RL) and multi-armed bandits (MAB). His primary focus lies in the domains of robust
+and sample-efficient RL, with applications spanning across robotics, neuroscience, energy systems, and quantum computing. He was a NSF TAST-NRT Fellow supported with surgical robotics
+research. Prior to his journey at Duke, he earned a B.S. degree in Mechanical Engineering from National Taiwan University and a M.S. degree in Biomedical Engineering from
+Georgia Institute of Technology. Beyond his academic pursuits, he was a Diversity Ambassador at Georgia Institute of Technology dedicating to advancing the values of diversity, equity, and inclusion. 
